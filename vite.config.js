@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/clone-blog-app",
+  base: "/clone-blog-app/",
   plugins: [react()],
   server: {
     proxy: {
