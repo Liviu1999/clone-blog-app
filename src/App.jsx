@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <SearchProvider>
-        <Router basename="/Blog-app">
+        <Router basename="/clone-blog-app">
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
