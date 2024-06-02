@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import api from "../src/api"; // Import the configured axios instance
 import "./Blogpage/Blogpage.css";
 
 function Latest() {
@@ -18,7 +19,8 @@ function Latest() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("/api/");
+        const response = await api.get("/");
+        console.log("*********************Fetched data:", response.data);
         setData(response.data);
       } catch (error) {
         console.error("Fetching data failed:", error);
