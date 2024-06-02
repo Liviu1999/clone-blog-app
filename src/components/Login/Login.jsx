@@ -37,7 +37,7 @@ const Login = () => {
 
       if (user.id && token) {
         console.log(user.id, token);
-        window.location.href = "/";
+        window.location.href = "/clone-blog-app/";
       } else {
         alert("Invalid email or password");
       }
